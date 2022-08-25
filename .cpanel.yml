@@ -3,4 +3,4 @@ deployment:
  tasks:
     - export REPOPATH=/home/otpotpot/repositories/test-cpanel/*
    - export SITEPATH=/home/otpotpot/rina.otpotpotp.of.by/
-   - /bin/cp -R --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
+   - /bin/rsync -rav --exclude '.git' --exclude '.cpanel.yml' --del $REPOPATH $SITEPATH
